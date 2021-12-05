@@ -33,7 +33,7 @@ Users should be able to:
 <img width="922" alt="p6" src="https://user-images.githubusercontent.com/79615998/144729281-d435d5f9-cfcb-4392-9694-a320ce25a0fd.png">
 
 ### Links
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL:(https://mznizami.github.io/STM-Website/)
 
 ## My process
 
