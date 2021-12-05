@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paper Submission</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css">
+	<script type="text/javascript" src="bootstrap-5.0.0-beta3-dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.15.3-web/css/all.css">
+	<script src="jquery-3.6.0.min.js"></script>
+
+
+	<script type="text/javascript">
+		
+$(document).ready(function(){
+
+$('.menu-toggle').click(function(){
+
+	$('nav').toggleClass('active')
+})
+
+})
+
+
+
+	</script>
+</head>
+<body>
+
+	<div class="parent-paper">
+		<img src="img/3.jpeg" style="width: 100%;height: 600px;">
+		 <div class="text" style="top: 300px; height: 200px;"><b>Paper <br>Submission</div>
+		<header style="position: fixed;">
+  <a class="navbar-brand" href="#" class="logo">
+    <img src="img/Logo.png" alt="logo" style="width: 20%;">
+  </a>	
+  <div class="menu-toggle" ><i class="fas fa-bars"></i></div>
+  <nav>
+  	<ul>
+  		<li><a href="main.html">Home</a></li>
+  		<li><a href="main.html#about">About</a></li>
+  		<li><a href="#" class="active">Paper Submission</a></li>
+  		<li><a href="#">STM Team</a></li>
+  		<li><a href="contact.html">Contact</a></li>
+  	</ul>
+
+
+
+  </nav>
+<div class="clearfix"></div>
+
+
+</header>
+
+	</div>
+
+
+
+<div class="container" id="form-sub" style="margin-top: 30px;">
+  <form >
+  <div class="row" id="row">
+    <div class="col-25" id="col-25">
+      <label for="fname">Name</label>
+    </div>
+    <div class="col-75" id="col-75">
+      <input type="text" id="name" name="firstname" placeholder="Your name.." autocomplete="off">
+    </div>
+  </div>
+  <div class="row" id="row">
+    <div class="col-25" id="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75" id="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </div>
+  </div>
+    <div class="row" id="row">
+    <div class="col-25" id="col-25">
+      <label for="lname">Email</label>
+    </div>
+    <div class="col-75" id="col-75">
+      <input type="text" id="email" name="lastname" placeholder="Your Email..">
+    </div>
+  </div>
+  <div class="row" id="row">
+    <div class="col-25" id="col-25">
+      <label for="country">Province</label>
+    </div>
+    <div class="col-75" id="col-75">
+      <select id="Province" name="Province">
+        <option value="australia">Kabul</option>
+        <option value="canada">Mazar</option>
+        <option value="usa">Kandahar</option>
+         <option value="usa">Herat</option>
+          
+      </select>
+    </div>
+  </div>
+  <div class="row" id="row">
+    <div class="col-25" id="col-25">
+      <label for="subject">Upload Paper</label>
+    </div>
+    <div class="col-75" id="col-75">
+       <input type="button" value="choose file" style="margin-right: 700px;">
+    </div>
+  </div>
+  <div class="row" id="row" style="margin-top: 30px;">
+    <input type="button" value="Submit" onclick="validate()">
+  </div>
+  </form>
+</div>
+
+	<footer style=" background: #ABB2B9; margin-top: 30px;">
+	<div class="container">
+		  <div class="row">
+    <div class="col-sm-4" id="foot-font" style="padding-top: 30px;">
+    	<img src="img/Logo.png" style="width:50%;height: 50px;">
+    	<br><br>
+      <p style="font-weight: normal;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore. 
+     </p>
+     <p>
+ <i class="fab fa-twitter" ></i>
+<i class="fab fa-facebook" ></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-linkedin" ></i>
+
+
+     </p>
+    </div>
+    <div class="col-sm-4" style="text-align: center;">
+    	<h4><br>Contact Info</h4>
+      <p style="font-weight: normal;">The American University of Afghanistan
+P.O.Box 458 Central Post Office | Dar-ul-Aman Road Kabul.</p>
+<p style="font-weight: normal;">Admissions:
+0797 200 400 | 0794 800 400</p>
+<p>© American University of Afghanistan All rights reserved. Terms of Use</p>
+    </div>
+
+     <div class="col-sm-4" style="padding-left: 50px;">
+     <h4><br>More Links</h4>
+      <p>Latest News</p>
+<p>Have More Questions</p>
+<p>About STM</p>
+<p>FAQs</p>
+    </div>
+  </div>
+		
+	</div>
+
+</footer>
+<script type="text/javascript">
+	
+function validate(){
+    var regName = /^[A-Za-z]+$/;  //for the father name only Alphabets are allowed in textbox
+     
+    var regEmail=/@(gmail|yahoo|hotmail)\.com$/; //allows email with gmail/yahoo/hotmail and with the ending of .com 
+    var name = document.getElementById('name');
+    var lname= document.getElementById('lname');
+    var email= document.getElementById('email');
+     
+
+    
+    if(name.value.match(regName)){
+    	  name.style.borderColor = "#7FFF00";//if it matches with the condition the color of textbox will become lightgreen 
+
+      
+        
+    }else{
+   		name.value='';
+      name.placeholder='Please only enter Alphabets';
+       name.style.borderColor = "red";
+       
+    }
+    if(lname.value.match(regName)){
+    	  lname.style.borderColor = "#7FFF00";//if it matches with the condition the color of textbox will become lightgreen 
+
+      
+        
+    }else{
+   		lname.value='';
+      lname.placeholder='Please only enter Alphabets';
+       lname.style.borderColor = "red";
+       
+
+    }
+
+        if(email.value.match(regEmail)){
+    	  email.style.borderColor = "#7FFF00";//if it matches with the condition the color of textbox will become lightgreen 
+
+      
+        
+    }else{
+   		email.value='';
+      email.placeholder='Please only enter an email of gamil/yahoo/hotmail';
+       email.style.borderColor = "red";
+       
+    }
+
+
+  }
+
+
+</script>
+</body>
+</html>

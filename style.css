@@ -1,0 +1,380 @@
+body{
+	margin: 0;
+	padding: 0;
+font-family: "Times New Roman", Times, serif;
+
+}
+header{
+	position: relative;
+	max-width: 1200px;
+	margin: 20px auto;
+	padding: 10px;
+	background: #ABB2B9;
+	box-sizing: border-box;
+	border-radius: 4px;
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+.logo{
+	line-height: 60px;
+	padding: 0 20px;
+
+	box-sizing: border-box;
+	float: left;
+	background-color: red;
+}
+
+nav{
+	float: right;
+}
+.clearfix{
+	clear: both;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+nav ul li {
+	list-style: none;
+	
+}
+.menu-toggle{
+	display: none;
+}
+nav ul li a {
+	display: block;	
+padding: 10px 20px;
+	text-decoration: none;
+	color: white;
+}
+nav ul li a.active, 
+nav ul li a:hover{
+	background-color: #2E86C1;
+	color: white;
+	transition: 0.5s;
+}
+@media (max-width: 1200px){
+
+header {
+	margin: 20px;
+}
+
+
+}
+@media (max-width: 1200px){
+
+.menu-toggle {
+	display: block;
+	width: 40px;
+	height: 40px;
+	margin: 10px;
+	
+	float: right;
+	cursor: pointer;
+	text-align: center;
+	font-size: 30px;
+	color: #2E86C1;
+}
+
+.menu-toggle:before{
+
+	line-height: 40px;
+}
+
+nav{
+	display: none;
+}
+
+nav.active{
+	display: block;
+	width: 100%;
+}
+
+nav.active ul{
+	display: block;
+	
+}
+.mySlides .text{
+	font-size: 30px;
+	bottom: 150px;
+}
+#aboutus .row{
+	position: static;
+}
+
+}
+
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 50px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 70px;
+  left: 25%;
+  width: 50%;
+  text-align: center;
+  
+  text-shadow: 2px 2px 4px #000000;
+  background: rgba(128, 139, 150, 0.4); 
+ 
+
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+header{
+	position: absolute;
+	  top: 0px;
+
+  right: 5px;
+  left: 5px;
+}
+.container h1, h4,h3{
+	text-align: center;
+}
+
+#t34 {
+	background-color: #2E86C1;
+	padding: 10px;
+}
+
+#t34 ul{
+	
+	color: white;
+	width: 50%;
+	float: left;
+	padding: 40px;
+}
+#submit button{
+background-color: #2E86C1;
+border:none;
+font-size: 20px;
+padding: 3px;
+width: 190px;
+color: white;
+
+}
+
+
+/* Slideshow container */
+.slideshow-container2 {
+  position: relative;
+  background: #2E86C1;
+}
+
+/* Slides */
+.mySlides2 {
+  display: none;
+  padding: 80px;
+  text-align: center;
+  color: white;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container2 {
+    text-align: center;
+    padding: 20px;
+   
+}
+
+/* The dots/bullets/indicators */
+.dot2 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active2, .dot2:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: #A3E4D7;}
+
+.card {
+
+  width: 90%;
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.container {
+  padding: 2px 16px;
+}
+.card .container p{
+	text-align: center;
+}
+
+
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  padding: 10px;
+}
+
+.date {
+  color: grey;
+  font-size: 22px;
+}
+
+.card2 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+ background: #2E86C1;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+footer #foot-font p i{
+color:  white;
+font-size: 30px;
+padding: 10px;
+}
+/*paper submission*/
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=button] {
+	 background: #2E86C1;
+
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=button]:hover {
+ background: #ABB2B9;
+}
+
+#form-sub {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+#col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+#col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  #col-25, #col-75, input[type=button] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+#contactForm .row{
+
+	margin-top: 20px;
+}
+#contactForm .row .col-sm-4{
+	text-align: center;
+}
